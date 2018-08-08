@@ -21,4 +21,5 @@ if [ $gce_cnt -eq 0 ]; then
     ret=$?
 fi
 
+
 exit $?
