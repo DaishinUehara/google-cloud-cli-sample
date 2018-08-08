@@ -12,7 +12,6 @@ if [ $_status1 -eq 1 ]; then
   eixt 1
 fi
 
-
 if [ $gce_cnt -eq 0 ]; then
   gcloud compute instances create \
     tutorial01
