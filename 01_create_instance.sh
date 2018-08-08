@@ -7,8 +7,8 @@ pipestatus() {
 }
 
 gce_cnt=$(gcloud compute instances list | wc -l )
-local _status1=pipestatus
-if [ $_status1 -eq 1 ]; then
+status1=pipestatus
+if [ $status1 -eq 1 ]; then
   eixt 1
 fi
 
