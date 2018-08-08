@@ -17,6 +17,7 @@ if [ $gce_cnt -eq 0 ]; then
   gcloud compute instances create \
     tutorial01 \
       --machine-type f1-micro \
+      --image-project centos-cloud \
       --image-family centos-7 \
       --zone us-west1-a
     ret=$?
