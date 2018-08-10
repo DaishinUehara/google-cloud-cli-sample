@@ -7,7 +7,7 @@ error(){
   exit 1
 }
 
-instances_lst=$(gcloud compute instances list | tail -n +2 | cut -f1)
+instances_lst=$(gcloud compute instances list | tail -n +2 | cut -f 1)
 
 for instance in $instances_lst
 do
