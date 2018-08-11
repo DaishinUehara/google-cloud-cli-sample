@@ -25,9 +25,13 @@ GCPのCLIサンプル
 
 ## サンプルスクリプト
 
-|サンプルスクリプトファイル|説明|
-|:--|:--|
-|01_create_instance.sh|[GCEインスタンス生成][2]|
+|サンプルスクリプトファイル|スクリプト名|説明|
+|:--|:--|:--|
+|01_create_instance.sh|[GCEインスタンス生成][2]|インスタンスが存在しない場合1つインスタンスを生成する|
+|02_list_instances.sh|[GCEインスタンス取得][3]|インスタンスを取得する|
+|03_delete_all_instances.sh|[全GCEインスタンス削除][4]|インスタンスを取得する|
 
 [1]:https://cloud.google.com/sdk/docs/how-to
 [2]:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create
+[3]:https://cloud.google.com/sdk/gcloud/reference/compute/instances/list
+[4]:https://cloud.google.com/sdk/gcloud/reference/compute/instances/delete
