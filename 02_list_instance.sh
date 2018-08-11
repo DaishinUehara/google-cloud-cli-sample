@@ -7,7 +7,7 @@ error(){
   exit 1
 }
 
-instances_lst=$(gcloud compute instances list | tail -n +2 | cut -f 1)
+instances_lst=$(gcloud compute instances list | tail -n +2 | sed -e 's/\ \ */\t/g' | cut -f 1)
 
 for instance in $instances_lst
 do
