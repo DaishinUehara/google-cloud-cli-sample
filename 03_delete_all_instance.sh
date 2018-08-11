@@ -15,7 +15,7 @@ if [ $status1 -ne 0 ]; then
   eixt $status1
 fi
 
-gcloud compute instances delete ${instances}
+gcloud compute instances delete ${instances} --quiet
 status1=$?
 if [ $status1 -ne 0 ]; then
   echo "Delete Instances Error!!" >&2
